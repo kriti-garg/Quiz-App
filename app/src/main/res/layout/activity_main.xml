@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         tools:context="com.kriti.quizapp.MainActivity">
 
@@ -15,7 +14,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="1. What is Deoxyribonucleic acid commonly referred to as ?"
+            android:text="@string/ques1"
             android:textColor="@android:color/black"
             android:textSize="20sp" />
 
@@ -31,7 +30,8 @@
                 android:layout_margin="10dp"
                 android:onClick="onRadioButtonFirst"
                 android:paddingLeft="5dp"
-                android:text="DNA"
+                android:paddingRight="5dp"
+                android:text="@string/ques1_option1"
                 android:textColor="@android:color/black"
                 android:textSize="15sp" />
 
@@ -42,7 +42,8 @@
                 android:layout_margin="10dp"
                 android:onClick="onRadioButtonFirst"
                 android:paddingLeft="5dp"
-                android:text="RBA"
+                android:paddingRight="5dp"
+                android:text="@string/ques1_option2"
                 android:textColor="@android:color/black"
                 android:textSize="15sp" />
 
@@ -53,7 +54,8 @@
                 android:layout_margin="10dp"
                 android:onClick="onRadioButtonFirst"
                 android:paddingLeft="5dp"
-                android:text="CIA"
+                android:paddingRight="5dp"
+                android:text="@string/ques1_option3"
                 android:textColor="@android:color/black"
                 android:textSize="15sp" />
         </RadioGroup>
@@ -62,7 +64,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="2.Commercial nitric acid is coloured because it contains dissolved :"
+            android:text="@string/ques2"
             android:textColor="@android:color/black"
             android:textSize="20sp" />
 
@@ -78,7 +80,8 @@
                 android:layout_margin="10dp"
                 android:onClick="onRadioButtonSecond"
                 android:paddingLeft="5dp"
-                android:text="Oxygen"
+                android:paddingRight="5dp"
+                android:text="@string/ques2_option1"
                 android:textColor="@android:color/black"
                 android:textSize="15sp" />
 
@@ -89,7 +92,8 @@
                 android:layout_margin="10dp"
                 android:onClick="onRadioButtonSecond"
                 android:paddingLeft="5dp"
-                android:text="Nitrogen Oxide"
+                android:paddingRight="5dp"
+                android:text="@string/ques2_option2"
                 android:textColor="@android:color/black"
                 android:textSize="15sp" />
 
@@ -100,7 +104,8 @@
                 android:layout_margin="10dp"
                 android:onClick="onRadioButtonSecond"
                 android:paddingLeft="5dp"
-                android:text="Nitrogen Dioxide"
+                android:paddingRight="5dp"
+                android:text="@string/ques2_option3"
                 android:textColor="@android:color/black"
                 android:textSize="15sp" />
 
@@ -111,7 +116,8 @@
                 android:layout_margin="10dp"
                 android:onClick="onRadioButtonSecond"
                 android:paddingLeft="5dp"
-                android:text="Coloured Impurified"
+                android:paddingRight="5dp"
+                android:text="@string/ques2_option4"
                 android:textColor="@android:color/black"
                 android:textSize="15sp" />
         </RadioGroup>
@@ -120,7 +126,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="3. Which gas is used for artificial fruit ripening of green fruits"
+            android:text="@string/ques3"
             android:textColor="@android:color/black"
             android:textSize="20sp" />
 
@@ -129,7 +135,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:hint="Answer"
+            android:hint="@string/ans"
             android:inputType="textCapWords"
             android:onClick="isRight"
             android:padding="10dp"
@@ -140,7 +146,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="4. Name two organelles of a eukaryotic cell :(multichoice)"
+            android:text="@string/ques4"
             android:textColor="@android:color/black"
             android:textSize="20sp" />
 
@@ -151,7 +157,8 @@
             android:layout_margin="10dp"
             android:onClick="onCheckboxFirst"
             android:paddingLeft="5dp"
-            android:text="Ribosome"
+            android:paddingRight="5dp"
+            android:text="@string/ques4_option1"
             android:textSize="15sp" />
 
         <CheckBox
@@ -161,7 +168,8 @@
             android:layout_margin="10dp"
             android:onClick="onCheckboxFirst"
             android:paddingLeft="5dp"
-            android:text="Plastids"
+            android:paddingRight="5dp"
+            android:text="@string/ques4_option2"
             android:textSize="15sp" />
 
         <CheckBox
@@ -171,7 +179,8 @@
             android:layout_margin="10dp"
             android:onClick="onCheckboxFirst"
             android:paddingLeft="5dp"
-            android:text="Golgi Apparatus"
+            android:paddingRight="5dp"
+            android:text="@string/ques4_option3"
             android:textSize="15sp" />
 
         <CheckBox
@@ -181,14 +190,15 @@
             android:layout_margin="10dp"
             android:onClick="onCheckboxFirst"
             android:paddingLeft="5dp"
-            android:text="Diploid"
+            android:paddingRight="5dp"
+            android:text="@string/ques4_option4"
             android:textSize="15sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="5. Alloy used in fuse wire are: (multichoice)"
+            android:text="@string/ques5"
             android:textColor="@android:color/black"
             android:textSize="20sp" />
 
@@ -199,7 +209,8 @@
             android:layout_margin="10dp"
             android:onClick="onCheckboxSecond"
             android:paddingLeft="5dp"
-            android:text="Copper"
+            android:paddingRight="5dp"
+            android:text="@string/ques5_option1"
             android:textSize="15sp" />
 
         <CheckBox
@@ -209,7 +220,8 @@
             android:layout_margin="10dp"
             android:onClick="onCheckboxSecond"
             android:paddingLeft="5dp"
-            android:text="Tin"
+            android:paddingRight="5dp"
+            android:text="@string/ques5_option2"
             android:textSize="15sp" />
 
         <CheckBox
@@ -219,7 +231,8 @@
             android:layout_margin="10dp"
             android:onClick="onCheckboxSecond"
             android:paddingLeft="5dp"
-            android:text="Lead"
+            android:paddingRight="5dp"
+            android:text="@string/ques5_option3"
             android:textSize="15sp" />
 
         <CheckBox
@@ -229,14 +242,14 @@
             android:layout_margin="10dp"
             android:onClick="onCheckboxSecond"
             android:paddingLeft="5dp"
-            android:text="Chromium"
+            android:paddingRight="5dp"
+            android:text="@string/ques5_option4"
             android:textSize="15sp" />
 
         <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true">
+            android:layout_height="wrap_content">
 
             <Button
                 android:id="@+id/button2"
@@ -248,9 +261,8 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginEnd="46dp"
                 android:layout_marginRight="46dp"
-                android:layout_weight="1"
                 android:onClick="onSubmit"
-                android:text="Submit" />
+                android:text="@string/submit" />
 
             <Button
                 android:id="@+id/button"
@@ -262,9 +274,8 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginLeft="40dp"
                 android:layout_marginStart="40dp"
-                android:layout_weight="1"
                 android:onClick="gradingInfo"
-                android:text="Grading" />
+                android:text="@string/grading" />
         </RelativeLayout>
 
         <TextView
@@ -275,6 +286,6 @@
             android:inputType="textCapWords"
             android:onClick="onSubmit"
             android:textColor="@android:color/black"
-            android:textSize="15dp" />
+            android:textSize="15sp" />
     </LinearLayout>
 </ScrollView>

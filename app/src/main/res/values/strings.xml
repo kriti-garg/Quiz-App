@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">Quiz App</string>
+    <string name="ques1">1. What is Deoxyribonucleic acid commonly referred to as ?</string>
+    <string name="ques1_option1">DNA</string>
+    <string name="ques1_option2">RBA</string>
+    <string name="ques1_option3">CIA</string>
+    <string name="ques2">2.Commercial nitric acid is coloured because it contains dissolved :</string>
+    <string name="ques2_option1">Oxygen</string>
+    <string name="ques2_option2">Nitrogen Oxide</string>
+    <string name="ques2_option3">Nitrogen Dioxide</string>
+    <string name="ques2_option4">Coloured Impurified</string>
+    <string name="ques3">3. Which gas is used for artificial fruit ripening of green fruits</string>
+    <string name="ques4">4. Name two organelles of a eukaryotic cell :(multichoice)</string>
+    <string name="ques4_option1">Ribosome</string>
+    <string name="ques4_option2">Plastids</string>
+    <string name="ques4_option3">Golgi Apparatus</string>
+    <string name="ques4_option4">Diploid</string>
+    <string name="ques5">5. Alloy used in fuse wire are: (multichoice)</string>
+    <string name="ques5_option1">Copper</string>
+    <string name="ques5_option2">Tin</string>
+    <string name="ques5_option3">Lead</string>
+    <string name="ques5_option4">Chromium</string>
+    <string name="ans">Answer</string>
+    <string name="submit">Submit</string>
+    <string name="grading">Grading</string>
+    <string name="scoredisplay">Total score is: %1$d</string>
 </resources>
