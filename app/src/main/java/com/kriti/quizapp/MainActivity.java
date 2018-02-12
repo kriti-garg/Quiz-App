@@ -7,76 +7,87 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
+
 public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+
     int countR = 0;
-    int score1=0,score2=0,score3=0,score4=0,score5=0;
+    int score1 = 0;
+
     public void onCheckboxFirst(View view) {
-        // boolean checked = ((CheckBox) view).isChecked();
-        CheckBox ribo = (CheckBox) findViewById(R.id.ribo);
-        CheckBox plastids = (CheckBox) findViewById(R.id.plastids);
-        CheckBox diploid = (CheckBox) findViewById(R.id.diploid);
-        CheckBox golgi = (CheckBox) findViewById(R.id.golgi);
-        if (ribo.isChecked() && golgi.isChecked() && (!plastids.isChecked()) && (!diploid.isChecked())){
-            score1  = 1;
-        }
-        else{
+        CheckBox ribo =  findViewById(R.id.ribo);
+        CheckBox plastids =  findViewById(R.id.plastids);
+        CheckBox diploid = findViewById(R.id.diploid);
+        CheckBox golgi =  findViewById(R.id.golgi);
+        if (ribo.isChecked() && golgi.isChecked() && (!plastids.isChecked()) && (!diploid.isChecked())) {
+            score1 = 1;
+        } else {
             score1 = 0;
         }
     }
-    public void onCheckboxSecond(View view) {
-      //  boolean checked = ((CheckBox) view).isChecked();
-       // int f2=0;
-        CheckBox tin = (CheckBox) findViewById(R.id.tin);
-        CheckBox lead = (CheckBox) findViewById(R.id.lead);
-        CheckBox copper = (CheckBox) findViewById(R.id.copper);
-        CheckBox chromium = (CheckBox) findViewById(R.id.chromium);
 
-         if (tin.isChecked() && lead.isChecked() && (!copper.isChecked()) && (!chromium.isChecked()))
-            score2=1;
-         else score2=0;
+    int score2 = 0;
+
+    public void onCheckboxSecond(View view) {
+        CheckBox tin = findViewById(R.id.tin);
+        CheckBox lead = findViewById(R.id.lead);
+        CheckBox copper =findViewById(R.id.copper);
+        CheckBox chromium = findViewById(R.id.chromium);
+        if (tin.isChecked() && lead.isChecked() && (!copper.isChecked()) && (!chromium.isChecked())) {
+            score2 = 1;
+        } else {
+            score2 = 0;
+        }
     }
+
+    int score3 = 0;
 
     public void isRight(View view) {
-        EditText isRight = (EditText) findViewById(R.id.myEdit_text);
-        if (isRight.getText().toString().equals("Ethylene")) {
-            score3=1;
-        }
-        else score3=0;
-            String name = isRight.getText().toString();
-            if (name == null) {
-                Toast.makeText(this, "Plz fill all the answers", Toast.LENGTH_SHORT).show();
-            }
+        EditText isRight =findViewById(R.id.myEdit_text);
+        String str = isRight.getText().toString();
+        if (str.equals("Ethylene"))
+            score3 = 1;
+        else
+            score3 = 0;
     }
+
+    int score4 = 0;
 
     public void onRadioButtonFirst(View view) {
-        boolean checked = ((RadioButton) view).isChecked();
-        RadioButton dna = (RadioButton) findViewById(R.id.dna);
+        RadioButton dna = findViewById(R.id.dna);
         if (dna.isChecked())
-            score4=1;
-        else score4=0;
+            score4 = 1;
+        else
+            score4 = 0;
     }
 
+    int score5 = 0;
+
     public void onRadioButtonSecond(View view) {
-        boolean checked2 = ((RadioButton) view).isChecked();
-        RadioButton dioxide = (RadioButton) findViewById(R.id.dioxide);
+        RadioButton dioxide =findViewById(R.id.dioxide);
         if (dioxide.isChecked())
-            score5= 1;
-        else score5=0;
+            score5 = 1;
+        else
+            score5 = 0;
     }
+
     public void gradingInfo(View view) {
-        Toast.makeText(this, "Total Correct: " + (score1 + score2 + score3 + score4 + score5), Toast.LENGTH_SHORT).show();
+        countR = score1 + score2 + score3 + score4 + score5;
+        Toast.makeText(this, "Total Correct: " + countR, Toast.LENGTH_SHORT).show();
     }
+
     private void displayMessage(int count) {
-        TextView display = (TextView) findViewById(R.id.display);
-        display.setText("Total score is: " + count * 5);
+        TextView display =  findViewById(R.id.display);
+        display.setText("Total score is: " + (count * 5));
     }
+
+
     public void onSubmit(View view) {
-        countR=score1+score2+score3+score4+score5;
+        countR = (score1 + score2 + score3 + score4 + score5);
         displayMessage(countR);
     }
 
