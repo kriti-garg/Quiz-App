@@ -6,7 +6,7 @@ This project was made as a part of Android Foundation  I Nanodegree Program. Thi
 | ---------------- | --------------------- |
 | Text Response    | Textbox               |
 | Single Choice    | Radio Buttons         |
-| Single Choice    | Checked Boxes         |
+| Multiple Choice    | Checked Boxes         |
 
 App includes a Submit button for the user to submit their answers and receive a score as well as a Grading button which displays a toast which accurately displays the results of the quiz.
 
