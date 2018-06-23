@@ -10,7 +10,7 @@ This project was made as a part of Android Foundation  I Nanodegree Program. Thi
 
 App includes a Submit button for the user to submit their answers and receive a score as well as a Grading button which displays a toast which accurately displays the results of the quiz.
 
-The app vedio can be found at this [link](video.mp4) 
+The app video can be found at this [link](video.mp4) 
 
 Some of the screenshots from the app are displayed below : 
 
